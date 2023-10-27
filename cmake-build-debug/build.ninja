@@ -95,10 +95,10 @@ build unittest.exe: CXX_EXECUTABLE_LINKER__unittest_Debug CMakeFiles/unittest.di
 #############################################
 # Order-only phony target for chap9_exam
 
-build cmake_object_order_depends_target_chap9_exam: phony || runner.cpp
+build cmake_object_order_depends_target_chap9_exam: phony || CMakeFiles/chap9_exam.dir
 
-build CMakeFiles/chap9_exam.dir/runner.cpp.obj: CXX_COMPILER__chap9_exam_unscanned_Debug C$:/Users/amoah/CLionProjects/chap9_exam/cmake-build-debug/runner.cpp || cmake_object_order_depends_target_chap9_exam
-  DEP_FILE = CMakeFiles\chap9_exam.dir\runner.cpp.obj.d
+build CMakeFiles/chap9_exam.dir/main.cpp.obj: CXX_COMPILER__chap9_exam_unscanned_Debug C$:/Users/amoah/CLionProjects/chap9_exam/main.cpp || cmake_object_order_depends_target_chap9_exam
+  DEP_FILE = CMakeFiles\chap9_exam.dir\main.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
   INCLUDES = -Ic:/cxxtest-4.4
   OBJECT_DIR = CMakeFiles\chap9_exam.dir
@@ -126,7 +126,7 @@ build CMakeFiles/chap9_exam.dir/Course.cpp.obj: CXX_COMPILER__chap9_exam_unscann
 #############################################
 # Link the executable chap9_exam.exe
 
-build chap9_exam.exe: CXX_EXECUTABLE_LINKER__chap9_exam_Debug CMakeFiles/chap9_exam.dir/runner.cpp.obj CMakeFiles/chap9_exam.dir/Student.cpp.obj CMakeFiles/chap9_exam.dir/Course.cpp.obj
+build chap9_exam.exe: CXX_EXECUTABLE_LINKER__chap9_exam_Debug CMakeFiles/chap9_exam.dir/main.cpp.obj CMakeFiles/chap9_exam.dir/Student.cpp.obj CMakeFiles/chap9_exam.dir/Course.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\chap9_exam.dir

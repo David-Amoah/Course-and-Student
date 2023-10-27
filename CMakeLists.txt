@@ -22,7 +22,7 @@ if(CXXTEST_FOUND)
 
 endif()
 
-add_executable(chap9_exam runner.cpp
+add_executable(chap9_exam main.cpp
         newCxxTest.h
         Student.cpp
         Student.h

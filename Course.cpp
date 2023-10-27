@@ -69,8 +69,6 @@ void Course::LoadFile(string fileName) {
         throw runtime_error("Couldn't open");
     }
 
-
-
     string first, last;
     double gpa;
 
@@ -84,10 +82,14 @@ void Course::LoadFile(string fileName) {
 }
 
 void Course::RemoveStudent(const Student &student) {
+    if (roster.empty()) {
+        throw runtime_error("Vector is empty");
+    }
     for (size_t i = 0; i < roster.size(); i++) {
         if (roster[i] == student) {
             roster.erase(roster.begin() + i);
             return;
         }
+
     }
 }
